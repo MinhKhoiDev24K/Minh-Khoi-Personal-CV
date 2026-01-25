@@ -9,6 +9,8 @@ my background, skills, and projects.
 ## Tech Stack
 - HTML5
 - CSS3
+- Javascript
+
 
 ## Features
 - One-page layout
