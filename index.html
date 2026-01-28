@@ -3,162 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Võ Minh Khôi | CV IT Support</title>
-
+  <title>Võ Minh Khôi | IT Support Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="glass-bg"></div>
+
 <div class="page">
-
-  <!-- HEADER -->
   <header class="header">
-    <div class="avatar">
-      <!-- Có ảnh thì thay link, không có để placeholder -->
-      <img src="assets/avartar.jpg" alt="Ảnh đại diện">
-    </div>
-
-    <h1>VÕ MINH KHÔI</h1>
-    <p class="subtitle">IT Support · Helpdesk · Kỹ thuật viên CNTT</p>
-
-    <div class="contact">
-      <span>📞 0396 592 156 (Zalo)</span>
-      <span>📧 minhkhoik3p2st@gmail.com</span>
-      <span>📍 Cần Thơ</span>
-      <span>🔗 github.com/MinhKhoiDev24K</span>
+    <div class="header-container">
+      <div class="avatar">
+        <img src="assets/avartar.jpg" alt="Võ Minh Khôi">
+      </div>
+      <div class="info">
+        <h1>VÕ MINH KHÔI</h1>
+        <p class="subtitle">IT Support · Helpdesk · Kỹ thuật viên CNTT</p>
+        <div class="contact-grid">
+          <span><i class="fa-brands fa-whatsapp"></i> 0396 592 156 (Zalo)</span>
+          <span><i class="fa-regular fa-envelope"></i> minhkhoik3p2st@gmail.com</span>
+          <span><i class="fa-solid fa-location-dot"></i> Cần Thơ</span>
+          <span><i class="fa-brands fa-github"></i> github.com/MinhKhoiDev24K</span>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- MAIN -->
   <main class="content">
-
-    <!-- CỘT TRÁI -->
-    <div class="left">
-
-      <section>
-        <h2>GIỚI THIỆU</h2>
+    <div class="left-col">
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-user-tie"></i> GIỚI THIỆU</h2>
         <p>
-          Sinh viên ngành Công nghệ thông tin với định hướng IT Support / Helpdesk.
-          Có kinh nghiệm thực hành về cài đặt hệ điều hành, xử lý sự cố phần mềm,
-          bảo trì phần cứng và hỗ trợ người dùng. Đã tiếp cận Linux và hệ thống
-          máy chủ thông qua các đồ án học tập.
+          Sinh viên năm cuối ngành <strong>Khoa học Máy tính</strong>. Đam mê xử lý sự cố hệ thống và hỗ trợ kỹ thuật. Có kinh nghiệm thực chiến trong việc bảo trì phần cứng, tối ưu hóa Windows và quản trị Linux/Server cơ bản. Luôn ứng dụng AI và công cụ hiện đại để tối ưu hóa hiệu suất hỗ trợ.
         </p>
       </section>
 
-      <section>
-        <h2>KINH NGHIỆM & THỰC HÀNH</h2>
-        <ul>
-          <li>Cài đặt, cấu hình và xử lý lỗi Windows cho máy cá nhân và người quen</li>
-          <li>Chuẩn đoán và khắc phục lỗi phần cứng, phần mềm trên laptop và PC</li>
-          <li>Sử dụng các bộ công cụ cứu hộ: Hiren’s Boot, Anhdv Boot, MCBoot</li>
-          <li>Hỗ trợ cài đặt phần mềm, driver và thiết lập hệ thống cơ bản</li>
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> KINH NGHIỆM & THỰC HÀNH</h2>
+        <ul class="tech-list">
+          <li>Cài đặt, cấu hình và xử lý lỗi chuyên sâu <strong>Windows & Linux</strong>.</li>
+          <li>Sử dụng các bộ cứu hộ: <strong>Hiren’s Boot, Anhdv Boot, MCBoot</strong> để xử lý dữ liệu.</li>
+          <li>Chuẩn đoán lỗi phần cứng, thay thế linh kiện (RAM, SSD, Keyboard) cho Laptop/PC.</li>
+          <li>Hỗ trợ thiết lập hệ thống mạng nội bộ và phần mềm văn phòng.</li>
         </ul>
       </section>
 
-      <section>
-        <h2>ĐỒ ÁN HỌC TẬP (ĐỊNH HƯỚNG HỖ TRỢ HỆ THỐNG)</h2>
-
-        <h3>1. Cài Đặt Hệ Điều Hành Linux & Triển Khai Cấu Hình Dịch Vụ Web Server</h3>
-        <ul>
-          <li>Cài đặt và sử dụng hệ điều hành linux CentOS Stream 9/li>
-          <li>Cấu hình dịch vụ web Apache + PHP + Mysql</li>
-          <li>Triển khai và kiểm tra Apache web wordpress demo</li>
-        </ul>
-
-        <h3>2. Triển Khai Hệ Thống CI/CD Sử Dụng Docker Trên Nền Tảng Kubernestes</h3>
-        <ul>
-          <li>Làm quen quy trình build và deploy ứng dụng git/github + DockerHub + K8s + ArgoCD</li>
-          <li>Sử dụng Docker container để chạy ứng dụng</li>
-          <li>Hiểu môi trường vận hành và các lỗi thường gặp</li>
-        </ul>
-
-        <h3>3.Xây Dựng Hệ Thống Cấp Phát Máy Chủ Tự Động Và Quản Lý Vòng Đời Máy Chủ</h3>
-        <ul>
-          <li>Hệ thống cho phép máy chủ khởi động từ mạng để tự động cài và tải OS và công cụ cài đặt</li>
-          <li>Sử dụng Ansible cấu hình tự động giám sát và cập nhật</li>
-          <li>Gán nhãn ghi nhận trạng thái và hành trình sử dụng máy</li>
-        </ul>
-
-        <h3>4. Xây dựng hệ thống SmartAsset: Ứng dụng Web, AI và CI/CD Trong Quản Lý Tài Sản Nội Bộ</h3>
-        <ul>
-          <li>Xây dựng trang web hệ thống hỗ trợ ghi nhận trạng thái tình trạng của thiết bị tài sản</li>
-          <li>Huấn luyện tích hợp mô hình máy học nhận dạng tình trạng tài sản</li>
-          <li>Kết hợp triển khai theo quy trình CI/CD </li>
-        </ul>
+      <section class="card">
+        <h2 class="section-title"><i class="fa-brands fa-linux"></i> QUẢN TRỊ LINUX & WEB SERVER</h2>
+        <div class="project-item">
+          <h3><i class="fa-solid fa-terminal"></i> Triển Khai Dịch Vụ Web (LAMP Stack)</h3>
+          <ul class="tech-list">
+            <li>Tối ưu hóa hệ điều hành <strong>CentOS Stream 9</strong>.</li>
+            <li>Cấu hình <strong>Apache + PHP + MySQL</strong> từ dòng lệnh (Terminal).</li>
+            <li>Triển khai WordPress, xử lý lỗi phân quyền và cấu hình Virtual Host.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3><i class="fa-solid fa-microchip"></i> Quản Trị Hệ Thống Tự Động</h3>
+          <ul class="tech-list">
+            <li>Giám sát và cấu hình hệ thống tập trung qua <strong>Ansible</strong>.</li>
+            <li>Quản lý vòng đời thiết bị và cấp phát máy chủ tự động qua mạng.</li>
+          </ul>
+        </div>
       </section>
 
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> ĐỒ ÁN TIÊU BIỂU</h2>
+        <div class="project-item">
+          <h3><i class="fa-solid fa-server"></i> SmartAsset: Quản Lý Tài Sản & AI</h3>
+          <p>Hệ thống Web ghi nhận thiết bị, tích hợp AI nhận dạng hư hỏng và triển khai qua CI/CD.</p>
+        </div>
+        <div class="project-item">
+          <h3><i class="fa-solid fa-cloud"></i> CI/CD & Kubernetes</h3>
+          <p>Tự động hóa quy trình vận hành ứng dụng bằng Docker, K8s và ArgoCD.</p>
+        </div>
+      </section>
     </div>
 
-    <!-- CỘT PHẢI -->
-    <div class="right">
-
-      <section>
-        <h2>HỌC VẤN</h2>
-        <p>
-          <strong>Trường Đại Học Kỹ Thuật – Công Nghệ Cần Thơ</strong><br>
-          <!-- <strong>Kỹ sư Công nghệ Thông tin</strong><br> -->
-          Khóa: <strong>2022 – 2026</strong><br><br>
-
-          GPA: <strong>3.41 / 4.0</strong><br>
-          Tín chỉ hoàn thành: <strong>122 / 150</strong><br><br>
-
-          Học phần tiêu biểu:
-        </p>
-        <ul>
-          <li>Hệ điều hành</li>
-          <li>Mạng máy tính</li>
-          <li>Cơ sở dữ liệu</li>
-          <li>Học máy</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>KỸ NĂNG HỆ THỐNG</h2>
-        <ul>
-          <li>Nâng cấp RAM, SSD</li>
-          <li>Cài đặt Windows & driver</li>
-          <li>Kiểm tra log và chuẩn đoán lỗi</li>
-          <li>Xử lý sự cố LAN / Wi-Fi cơ bản</li>
-        </ul>
-      </section>
-
-
-      <section>
-        <h2>KỸ NĂNG</h2>
-
-        <div class="skill">
-          <span>Windows</span>
-          <div class="bar"><div style="width:85%"></div></div>
+    <div class="right-col">
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-user-graduate"></i> HỌC VẤN & CHỨNG CHỈ</h2>
+        <div class="edu-box">
+          <p><strong>ĐH Kỹ Thuật – Công Nghệ Cần Thơ</strong></p>
+          <p class="text-small">Khoa học Máy tính (2022 – 2027)</p>
+          <div class="gpa-badge">GPA: 3.41 / 4.0</div>
         </div>
+        
+        <div class="divider"></div>
 
-        <div class="skill">
-          <span>Phần cứng máy tính</span>
-          <div class="bar"><div style="width:80%"></div></div>
+        <div class="cert-item">
+          <p><i class="fa-solid fa-award"></i> <strong>Google IT Support Professional</strong></p>
+          <p class="text-small">Coursera | Chứng chỉ Helpdesk quốc tế</p>
         </div>
-
-        <div class="skill">
-          <span>Xử lý sự cố hệ thống</span>
-          <div class="bar"><div style="width:75%"></div></div>
+        <div class="cert-item">
+          <p><i class="fa-solid fa-robot"></i> <strong>Google AI Essentials</strong></p>
+          <p class="text-small">Google | Ứng dụng AI vào công việc</p>
         </div>
-
-        <div class="skill">
-          <span>Linux cơ bản</span>
-          <div class="bar"><div style="width:65%"></div></div>
+        <div class="cert-item">
+          <p><i class="fa-solid fa-language"></i> <strong>English B1</strong></p>
+          <p class="text-small">Đại học Cần Thơ | Đọc hiểu tài liệu IT</p>
         </div>
       </section>
 
-      
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-gears"></i> KỸ NĂNG CỐT LÕI</h2>
+        <div class="skill-tag">Phần cứng PC/Laptop</div>
+        <div class="skill-tag">Windows / Driver</div>
+        <div class="skill-tag">Linux Administrator</div>
+        <div class="skill-tag">Mạng LAN/Wi-Fi</div>
+        <div class="skill-tag">Docker / CI-CD</div>
+        <div class="skill-tag">Troubleshooting</div>
+      </section>
 
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> ĐÁNH GIÁ</h2>
+        <div class="skill-bar-container">
+          <span>Windows & Helpdesk</span>
+          <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>Hardware Repair</span>
+          <div class="progress"><div class="progress-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-bar-container">
+          <span>Linux & Web Server</span>
+          <div class="progress"><div class="progress-fill" style="width: 70%"></div></div>
+        </div>
+      </section>
     </div>
   </main>
 
   <footer>
-    © 2026 Võ Minh Khôi
+    <p>© 2026 Võ Minh Khôi | Thiết kế cho mục tiêu IT Support chuyên nghiệp</p>
   </footer>
-
 </div>
 
-<!-- <script src="js/main.js"></script> -->
 </body>
 </html>
