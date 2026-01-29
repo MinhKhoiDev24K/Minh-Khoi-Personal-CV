@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Võ Minh Khôi | IT Support Portfolio</title>
+  
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css"/>
@@ -20,7 +21,7 @@
       </div>
       <div class="info">
         <h1>VÕ MINH KHÔI</h1>
-        <p class="subtitle">IT Support · Helpdesk · Kỹ thuật viên CNTT</p>
+        <p class="subtitle">Kỹ thuật viên CNTT · IT Support · Helpdesk</p>
         <div class="contact-grid">
           <span><i class="fa-brands fa-whatsapp"></i> 0396 592 156 (Zalo)</span>
           <span><i class="fa-regular fa-envelope"></i> minhkhoik3p2st@gmail.com</span>
@@ -88,22 +89,34 @@
         <div class="edu-box">
           <p><strong>ĐH Kỹ Thuật – Công Nghệ Cần Thơ</strong></p>
           <p class="text-small">Khoa học Máy tính (2022 – 2027)</p>
-          <div class="gpa-badge">GPA: 3.41 / 4.0</div>
+          <div class="gpa-badge">GPA: 3.42 / 4.0</div>
         </div>
         
         <div class="divider"></div>
 
         <div class="cert-item">
-          <p><i class="fa-solid fa-award"></i> <strong>Google IT Support Professional</strong></p>
-          <p class="text-small">Coursera | Chứng chỉ Helpdesk quốc tế</p>
+          <p><i class="fa-solid fa-award"></i> 
+            <span class="view-cert" data-src="assets/Certified/Coursera _VoMinhKhoi_Support.pdf" data-title="Google IT Support Professional Certificate">
+              <strong>Google IT Support Professional</strong>
+            </span>
+          </p>
+          <p class="text-small">Chứng chỉ Helpdesk quốc tế</p>
         </div>
         <div class="cert-item">
-          <p><i class="fa-solid fa-robot"></i> <strong>Google AI Essentials</strong></p>
-          <p class="text-small">Google | Ứng dụng AI vào công việc</p>
+          <p><i class="fa-solid fa-robot"></i> 
+            <span class="view-cert" data-src="assets/Certified/Gemini_Certified_Student.jpg" data-title="Gemini AI Certified Student">
+              <strong>Gemini AI Essentials</strong>
+            </span>
+          </p>
+          <p class="text-small">Chứng chỉ AI Student</p>
         </div>
         <div class="cert-item">
-          <p><i class="fa-solid fa-language"></i> <strong>English B1</strong></p>
-          <p class="text-small">Đại học Cần Thơ | Đọc hiểu tài liệu IT</p>
+          <p><i class="fa-solid fa-language"></i> 
+            <span class="view-cert" data-src="assets/Certified/VoMinhKhoiVstepB1_1.pdf" data-title="Chứng chỉ Anh văn B1 - CTU">
+              <strong>English B1</strong>
+            </span>
+          </p>
+          <p class="text-small">Đại học Cần Thơ</p>
         </div>
       </section>
 
@@ -115,6 +128,26 @@
         <div class="skill-tag">Mạng LAN/Wi-Fi</div>
         <div class="skill-tag">Docker / CI-CD</div>
         <div class="skill-tag">Troubleshooting</div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title"><i class="fa-solid fa-heart-pulse"></i> HOẠT ĐỘNG XÃ HỘI</h2>
+        <div class="cert-item">
+          <p><i class="fa-solid fa-droplet"></i> 
+            <span class="view-cert" data-src="assets/Certified/HienMau2025.pdf" data-title="Giấy chứng nhận hiến máu nhân đạo">
+              <strong>Hiến máu nhân đạo</strong>
+            </span>
+          </p>
+          <p class="text-small">Tích cực tham gia đóng góp cộng đồng</p>
+        </div>
+        <div class="cert-item">
+          <p><i class="fa-solid fa-flag-vietnam"></i> 
+            <span class="view-cert" data-src="assets/Certified/DangBo.pdf" data-title="Giấy chứng nhận công tác Đảng">
+              <strong>Công tác Đảng</strong>
+            </span>
+          </p>
+          <p class="text-small">Hoàn thành tốt nhiệm vụ tổ chức</p>
+        </div>
       </section>
 
       <section class="card">
@@ -140,5 +173,16 @@
   </footer>
 </div>
 
+<div id="certModal" class="modal">
+  <span class="close-modal">&times;</span>
+  <div class="modal-body">
+    <div class="no-download-overlay"></div>
+    <img id="imgCert" style="display:none;" draggable="false">
+    <iframe id="pdfCert" style="display:none;" frameborder="0"></iframe>
+  </div>
+  <div id="caption"></div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
