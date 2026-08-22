@@ -3,184 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Võ Minh Khôi | IT Support Portfolio</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css"/>
+  <title>Võ Minh Khôi CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body oncontextmenu="return false;">
 
-<div class="glass-bg"></div>
+<div class="no-print">
+  <button class="btn-print" onclick="window.print()">In / Lưu file CV PDF</button>
+</div>
 
-<div class="page">
-  <header class="header">
-    <div class="header-container">
-      <div class="avatar">
-        <img src="assets/avartar.jpg" alt="Võ Minh Khôi">
-      </div>
-      <div class="info">
-        <h1>VÕ MINH KHÔI</h1>
-        <p class="subtitle">Kỹ thuật viên CNTT · IT Support · Helpdesk</p>
-        <div class="contact-grid">
-          <span><i class="fa-brands fa-whatsapp"></i> 0396 592 156 (Zalo)</span>
-          <span><i class="fa-regular fa-envelope"></i> minhkhoik3p2st@gmail.com</span>
-          <span><i class="fa-solid fa-location-dot"></i> Cần Thơ</span>
-          <span><i class="fa-brands fa-github"></i> github.com/MinhKhoiDev24K</span>
-        </div>
-      </div>
+<div class="cv-container">
+  <header>
+    <div class="header-info">
+      <h1>Võ Minh Khôi</h1>
+      <p><strong>Vị trí hướng tới:</strong> Kỹ Thuật Viên</p>
+      <p><strong>Năm Sinh:</strong> 2004</p>
+      <p><strong>Truờng:</strong> Đại Học Kỹ Thuật - Công Nghệ Cần Thơ</p>
+      <p><strong>Ngành học:</strong> Khoa học Máy tính  
+         <button class="view-detail-btn" data-src="assets/Certified/Bang_Diem_DH_VoMinhKhoi.pdf" data-title="Bảng điểm chi tiết - Võ Minh Khôi">[Xem bảng điểm]</button>
+      </p>
+    </div>
+    <div class="contact-info">
+      <div class="contact-row"><strong>SDT/Zalo:</strong> <span>0396 592 156</span></div>
+      <div class="contact-row"><strong>Email:</strong> <span>minhkhoik3p2st@gmail.com</span></div>
+      <div class="contact-row"><strong>Quê quán:</strong> <span>Cần Thơ</span></div>
+      <div class="contact-row"><strong>GitHub:</strong> <span>MinhKhoiDev24K</span></div>
     </div>
   </header>
 
-  <main class="content">
-    <div class="left-col">
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-user-tie"></i> GIỚI THIỆU</h2>
-        <p>
-          Sinh viên năm cuối ngành <strong>Khoa học Máy tính</strong>. Đam mê xử lý sự cố hệ thống và hỗ trợ kỹ thuật. Có kinh nghiệm thực chiến trong việc bảo trì phần cứng, tối ưu hóa Windows và quản trị Linux/Server cơ bản. Luôn ứng dụng AI và công cụ hiện đại để tối ưu hóa hiệu suất hỗ trợ.
-        </p>
-      </section>
+  <section>
+    <h2>Giới thiệu</h2>
+    <p class="indent-text">Sinh viên năm cuối ngành Khoa học Máy tính đã hoàn thành chương trình thực tập và đang hoàn tất các tín chỉ chờ tốt nghiệp. Có định hướng đam mê và chuyên sâu về kỹ thuật sửa chữa phần cứng laptop, xử lý sự cố thiết bị và quản trị hạ tầng hệ thống. Đã có kinh nghiệm thực tế trong việc chẩn đoán lỗi, thay thế linh kiện và bảo trì phần cứng. Mong muốn tìm kiếm cơ hội làm việc chính thức hoặc bán thời gian ở vị trí Kỹ thuật viên.</p>
+  </section>
 
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> KINH NGHIỆM & THỰC HÀNH</h2>
-        <ul class="tech-list">
-          <li>Cài đặt, cấu hình và xử lý lỗi chuyên sâu <strong>Windows & Linux</strong>.</li>
-          <li>Sử dụng các bộ cứu hộ: <strong>Hiren’s Boot, Anhdv Boot, MCBoot</strong> để xử lý dữ liệu.</li>
-          <li>Chuẩn đoán lỗi phần cứng, thay thế linh kiện (RAM, SSD, Keyboard) cho Laptop/PC.</li>
-          <li>Hỗ trợ thiết lập hệ thống mạng nội bộ và phần mềm văn phòng.</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Kỹ năng</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">Sửa hàn linh kiện (Hàn B)</span>
+      <span class="skill-tag">Kiểm lỗi AOI 2D</span>
+      <span class="skill-tag">Thay linh kiện Laptop/PC</span>
+      <span class="skill-tag">Cứu hộ dữ liệu (Boot)</span>
+      <span class="skill-tag">Windows / Driver</span>
+      <span class="skill-tag">Linux Administrator</span>
+      <span class="skill-tag">Docker / CI-CD</span>
+      <span class="skill-tag">Mạng LAN / Troubleshooting</span>
+    </div>
+  </section>
 
-      <section class="card">
-        <h2 class="section-title"><i class="fa-brands fa-linux"></i> QUẢN TRỊ LINUX & WEB SERVER</h2>
-        <div class="project-item">
-          <h3><i class="fa-solid fa-terminal"></i> Triển Khai Dịch Vụ Web (LAMP Stack)</h3>
-          <ul class="tech-list">
-            <li>Tối ưu hóa hệ điều hành <strong>CentOS Stream 9</strong>.</li>
-            <li>Cấu hình <strong>Apache + PHP + MySQL</strong> từ dòng lệnh (Terminal).</li>
-            <li>Triển khai WordPress, xử lý lỗi phân quyền và cấu hình Virtual Host.</li>
-          </ul>
-        </div>
-        <div class="project-item">
-          <h3><i class="fa-solid fa-microchip"></i> Quản Trị Hệ Thống Tự Động</h3>
-          <ul class="tech-list">
-            <li>Giám sát và cấu hình hệ thống tập trung qua <strong>Ansible</strong>.</li>
-            <li>Quản lý vòng đời thiết bị và cấp phát máy chủ tự động qua mạng.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> ĐỒ ÁN TIÊU BIỂU</h2>
-        <div class="project-item">
-          <h3><i class="fa-solid fa-server"></i> SmartAsset: Quản Lý Tài Sản & AI</h3>
-          <p>Hệ thống Web ghi nhận thiết bị, tích hợp AI nhận dạng hư hỏng và triển khai qua CI/CD.</p>
-        </div>
-        <div class="project-item">
-          <h3><i class="fa-solid fa-cloud"></i> CI/CD & Kubernetes</h3>
-          <p>Tự động hóa quy trình vận hành ứng dụng bằng Docker, K8s và ArgoCD.</p>
-        </div>
-      </section>
+  <section>
+    <h2>Kinh nghiệm thực tế & Thực hành</h2>
+    
+    <div style="margin-bottom: 14px;">
+      <div class="item-header">
+        <span>Công ty TNHH UMC Việt Nam (UMC ELECTRONICS VIETNAM)</span>
+        <span>Thực tế sản xuất</span>
+      </div>
+      <div class="item-sub">
+        Vị trí: Hàn - Sửa hàn & Kiểm tra lỗi hàn AOI 2D 
+        <button class="view-detail-btn" data-src="assets/Certified/HanB_AOI_1.pdf" data-title="Chứng chỉ hàn B & Kiểm tra AOI 2D - UMC">[Xem chứng chỉ]</button>
+      </div>
+      <ul>
+        <li>Thực hiện thao tác sửa hàn linh kiện điện tử công đoạn sau máy hàn đạt tiêu chuẩn.</li>
+        <li>Thực hiện thao tác hàn gắn linh kiện điện tử: Pin, IC, tụ, trở, ...</li>
+        <li>Vận hành và kiểm tra lỗi mối hàn tự động qua hệ thống máy AOI 2D, đảm bảo chất lượng bo mạch trước khi xuất xưởng.</li>
+      </ul>
     </div>
 
-    <div class="right-col">
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-user-graduate"></i> HỌC VẤN & CHỨNG CHỈ</h2>
-        <div class="edu-box">
-          <p><strong>ĐH Kỹ Thuật – Công Nghệ Cần Thơ</strong></p>
-          <p class="text-small">Khoa học Máy tính (2022 – 2027)</p>
-          <div class="gpa-badge">GPA: 3.42 / 4.0</div>
-        </div>
-        
-        <div class="divider"></div>
-
-        <div class="cert-item">
-          <p><i class="fa-solid fa-award"></i> 
-            <span class="view-cert" data-src="assets/Certified/Coursera _VoMinhKhoi_Support.pdf" data-title="Google IT Support Professional Certificate">
-              <strong>Google IT Support Professional</strong>
-            </span>
-          </p>
-          <p class="text-small">Chứng chỉ Helpdesk quốc tế</p>
-        </div>
-        <div class="cert-item">
-          <p><i class="fa-solid fa-robot"></i> 
-            <span class="view-cert" data-src="assets/Certified/Gemini_Certified_Student.jpg" data-title="Gemini AI Certified Student">
-              <strong>Gemini AI Essentials</strong>
-            </span>
-          </p>
-          <p class="text-small">Chứng chỉ AI Student</p>
-        </div>
-        <div class="cert-item">
-          <p><i class="fa-solid fa-language"></i> 
-            <span class="view-cert" data-src="assets/Certified/VoMinhKhoiVstepB1_1.pdf" data-title="Chứng chỉ Anh văn B1 - CTU">
-              <strong>English B1</strong>
-            </span>
-          </p>
-          <p class="text-small">Đại học Cần Thơ</p>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-gears"></i> KỸ NĂNG CỐT LÕI</h2>
-        <div class="skill-tag">Phần cứng PC/Laptop</div>
-        <div class="skill-tag">Windows / Driver</div>
-        <div class="skill-tag">Linux Administrator</div>
-        <div class="skill-tag">Mạng LAN/Wi-Fi</div>
-        <div class="skill-tag">Docker / CI-CD</div>
-        <div class="skill-tag">Troubleshooting</div>
-      </section>
-
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-heart-pulse"></i> HOẠT ĐỘNG XÃ HỘI</h2>
-        <div class="cert-item">
-          <p><i class="fa-solid fa-droplet"></i> 
-            <span class="view-cert" data-src="assets/Certified/HienMau2025.pdf" data-title="Giấy chứng nhận hiến máu nhân đạo">
-              <strong>Hiến máu nhân đạo</strong>
-            </span>
-          </p>
-          <p class="text-small">Tích cực tham gia đóng góp cộng đồng</p>
-        </div>
-        <div class="cert-item">
-          <p><i class="fa-solid fa-flag-vietnam"></i> 
-            <span class="view-cert" data-src="assets/Certified/DangBo.pdf" data-title="Giấy chứng nhận công tác Đảng">
-              <strong>Công tác Đảng</strong>
-            </span>
-          </p>
-          <p class="text-small">Hoàn thành tốt nhiệm vụ tổ chức</p>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> ĐÁNH GIÁ</h2>
-        <div class="skill-bar-container">
-          <span>Windows & Helpdesk</span>
-          <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
-        </div>
-        <div class="skill-bar-container">
-          <span>Hardware Repair</span>
-          <div class="progress"><div class="progress-fill" style="width: 85%"></div></div>
-        </div>
-        <div class="skill-bar-container">
-          <span>Linux & Web Server</span>
-          <div class="progress"><div class="progress-fill" style="width: 70%"></div></div>
-        </div>
-      </section>
+    <div>
+      <div class="item-header">
+        <span>Bảo trì & Sửa chữa phần cứng máy tính</span>
+        <span>Thực hành kỹ thuật</span>
+      </div>
+      <ul>
+        <li>Thực hiện thay thế nâng cấp linh kiện phần cứng Laptop/PC: RAM, SSD, Bàn phím, Pin, Loa,...</li>
+        <li>Chuẩn đoán lỗi phần mềm - phần cứng, xử lý sự cố hệ điều hành Windows, cài đặt driver và tối ưu hiệu suất máy.</li>
+        <li>Sử dụng được các bộ cứu hộ (Hiren’s Boot, Anhdv Boot, MCBoot) để backup dữ liệu và phục hồi hệ thống.</li>
+      </ul>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>© 2026 Võ Minh Khôi | Thiết kế cho mục tiêu IT Support chuyên nghiệp</p>
-  </footer>
+  <section>
+    <h2>Project tiêu biểu</h2>
+    
+    <div style="margin-bottom: 14px;">
+      <div class="item-header"><span>Project 1: Tìm hiểu HĐH Linux & Cấu hình dịch vụ Web Server trên CentOS</span></div>
+      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Cấu hình CentOS Stream 9, triển khai Apache + PHP + MySQL, cấu hình Virtual Host và tường lửa.</p>
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <div class="item-header"><span>Project 2: Triển khai hệ thống CI/CD với Docker & Kubernetes</span></div>
+      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Tự động hóa quy trình vận hành ứng dụng bằng Docker, K8s, Jenkins và ArgoCD.</p>
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <div class="item-header"><span>Project 3: Xây dựng hệ thống cấp phát máy chủ tự động & Quản lý vòng đời máy chủ</span></div>
+      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Sử dụng Bash Scripting và Ansible để cấu hình tập trung và quản lý vòng đời thiết bị tự động qua mạng.</p>
+    </div>
+
+    <div>
+      <div class="item-header"><span>Project 4: SmartAsset - Quản lý tài sản & ML/AI</span></div>
+      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Ứng dụng Web FastAPI ghi nhận thiết bị, tích hợp huấn luyện mô hình ML/AI nhận dạng hư hỏng và triển khai qua CI/CD.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Học vấn & Chứng chỉ khác</h2>
+    <div class="item-header">
+      <span>Đại học Kỹ thuật – Công nghệ Cần Thơ</span>
+      <span>2022 – 2027</span>
+    </div>
+    <p class="item-sub">Ngành: Khoa học Máy tính</p>
+    <ul>
+      <li>
+        <strong>Google IT Support Professional:</strong> Chứng chỉ Helpdesk quốc tế
+        <button class="view-detail-btn" data-src="assets/Certified/Coursera _VoMinhKhoi_Support.pdf" data-title="Google IT Support Professional Certificate">[Xem chứng chỉ]</button>
+      </li>
+      <li>
+        <strong>Gemini AI Essentials:</strong> Chứng chỉ AI Student
+        <button class="view-detail-btn" data-src="assets/Certified/Gemini_Certified_Student.jpg" data-title="Gemini AI Certified Student">[Xem chứng chỉ]</button>
+      </li>
+      <li>
+        <strong>English B1:</strong> Chứng chỉ ngoại ngữ Đại học Cần Thơ
+        <button class="view-detail-btn" data-src="assets/Certified/VoMinhKhoiVstepB1_1.pdf" data-title="Chứng chỉ Anh văn B1 - CTU">[Xem chứng chỉ]</button>
+      </li>
+    </ul>
+  </section>
 </div>
 
-<div id="certModal" class="modal">
-  <span class="close-modal">&times;</span>
+<div id="detailModal" class="modal">
   <div class="modal-body">
+    <span class="close-modal">&times;</span>
     <div class="no-download-overlay"></div>
-    <img id="imgCert" style="display:none;" draggable="false">
-    <iframe id="pdfCert" style="display:none;" frameborder="0"></iframe>
+    <img id="imgViewer" style="display:none;" class="modal-content" draggable="false">
+    <iframe id="pdfViewer" style="display:none;" frameborder="0" scrolling="yes"></iframe>
+    <div id="caption"></div>
   </div>
-  <div id="caption"></div>
 </div>
 
 <script src="js/main.js"></script>
