@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
       captionText.innerHTML = title;
       document.body.style.overflow = "hidden";
 
-      // Xóa nội dung ảnh cũ và load các trang mới vào
       imageContainer.innerHTML = "";
       srcList.forEach(src => {
         const img = document.createElement("img");

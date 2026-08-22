@@ -11,19 +11,14 @@
 </head>
 <body oncontextmenu="return false;">
 
-<div class="no-print">
-  <button class="btn-print" onclick="window.print()">In / Lưu file CV PDF</button>
-</div>
-
 <div class="cv-container">
   <header>
     <div class="header-info">
       <h1>Võ Minh Khôi</h1>
       <p><strong>Vị trí hướng tới:</strong> Kỹ Thuật Viên</p>
       <p><strong>Năm Sinh:</strong> 2004</p>
-      <p><strong>Truờng:</strong> Đại Học Kỹ Thuật - Công Nghệ Cần Thơ</p>
+      <p><strong>Trường:</strong> Đại Học Kỹ Thuật - Công Nghệ Cần Thơ</p>
       <p><strong>Ngành học:</strong> Khoa học Máy tính  
-         <!-- Bảng điểm có 4 trang -->
          <button class="view-detail-btn" data-src="assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0001.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0002.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0003.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0004.jpg" data-title="Bảng điểm chi tiết - Võ Minh Khôi">[Xem bảng điểm]</button>
       </p>
     </div>
@@ -64,7 +59,6 @@
       </div>
       <div class="item-sub">
         Vị trí: Hàn - Sửa hàn & Kiểm tra lỗi hàn AOI 2D 
-        <!-- Chứng chỉ Hàn AOI có 2 trang -->
         <button class="view-detail-btn" data-src="assets/Certified/Han_AOI/HanB_AOI_1_page-0001.jpg,assets/Certified/Han_AOI/HanB_AOI_1_page-0002.jpg" data-title="Chứng chỉ hàn B & Kiểm tra AOI 2D - UMC">[Xem chứng chỉ]</button>
       </div>
       <ul>
@@ -107,7 +101,7 @@
 
     <div>
       <div class="item-header"><span>Project 4: SmartAsset - Quản lý tài sản & ML/AI</span></div>
-      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Ứng dụng Web FastAPI ghi nhận thiết bị, tích hợp huấn luyện mô hình ML/AI nhận dạng hư hỏng và triển khai qua CI/CD.</p>
+      <p class="indent-text" style="margin: 3px 0;"><em>Mục tiêu & Công nghệ:</em> Ứng dụng Web FastAPI ghi nhận thiết bị, tích hợp huấn luyện mô hình ML/AI nhận dạng thiết bị hư hỏng và triển khai qua CI/CD.</p>
     </div>
   </section>
 
@@ -129,19 +123,17 @@
       </li>
       <li>
         <strong>English B1:</strong> Chứng chỉ ngoại ngữ Đại học Cần Thơ
-        <!-- Anh văn B1 có 2 trang -->
         <button class="view-detail-btn" data-src="assets/Certified/AV/VoMinhKhoiVstepB1_1_page-0001.jpg,assets/Certified/AV/VoMinhKhoiVstepB1_1_page-0002.jpg" data-title="Chứng chỉ Anh văn B1 - CTU">[Xem chứng chỉ]</button>
       </li>
     </ul>
   </section>
 </div>
 
-<!-- Modal hiển thị danh sách ảnh chứng chỉ bảo mật -->
+<!-- Modal xem chi tiết ảnh bảo mật -->
 <div id="detailModal" class="modal">
   <div class="modal-body">
     <span class="close-modal">&times;</span>
     <div class="no-download-overlay"></div>
-    <!-- Khu vực chứa các trang ảnh động -->
     <div id="imageContainer" style="display: flex; flex-direction: column; gap: 15px; align-items: center;"></div>
     <div id="caption"></div>
   </div>
