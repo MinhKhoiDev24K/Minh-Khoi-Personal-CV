@@ -23,7 +23,8 @@
       <p><strong>Năm Sinh:</strong> 2004</p>
       <p><strong>Truờng:</strong> Đại Học Kỹ Thuật - Công Nghệ Cần Thơ</p>
       <p><strong>Ngành học:</strong> Khoa học Máy tính  
-         <button class="view-detail-btn" data-src="assets/Certified/Bang_Diem_DH_VoMinhKhoi.pdf" data-title="Bảng điểm chi tiết - Võ Minh Khôi">[Xem bảng điểm]</button>
+         <!-- Bảng điểm có 4 trang -->
+         <button class="view-detail-btn" data-src="assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0001.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0002.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0003.jpg,assets/Certified/Bang_Diem/Bang_Diem_DH_VoMinhKhoi_page-0004.jpg" data-title="Bảng điểm chi tiết - Võ Minh Khôi">[Xem bảng điểm]</button>
       </p>
     </div>
     <div class="contact-info">
@@ -63,7 +64,8 @@
       </div>
       <div class="item-sub">
         Vị trí: Hàn - Sửa hàn & Kiểm tra lỗi hàn AOI 2D 
-        <button class="view-detail-btn" data-src="assets/Certified/HanB_AOI_1.pdf" data-title="Chứng chỉ hàn B & Kiểm tra AOI 2D - UMC">[Xem chứng chỉ]</button>
+        <!-- Chứng chỉ Hàn AOI có 2 trang -->
+        <button class="view-detail-btn" data-src="assets/Certified/Han_AOI/HanB_AOI_1_page-0001.jpg,assets/Certified/Han_AOI/HanB_AOI_1_page-0002.jpg" data-title="Chứng chỉ hàn B & Kiểm tra AOI 2D - UMC">[Xem chứng chỉ]</button>
       </div>
       <ul>
         <li>Thực hiện thao tác sửa hàn linh kiện điện tử công đoạn sau máy hàn đạt tiêu chuẩn.</li>
@@ -119,7 +121,7 @@
     <ul>
       <li>
         <strong>Google IT Support Professional:</strong> Chứng chỉ Helpdesk quốc tế
-        <button class="view-detail-btn" data-src="assets/Certified/Coursera _VoMinhKhoi_Support.pdf" data-title="Google IT Support Professional Certificate">[Xem chứng chỉ]</button>
+        <button class="view-detail-btn" data-src="assets/Certified/Coursera _VoMinhKhoi_Support_page-0001.jpg" data-title="Google IT Support Professional Certificate">[Xem chứng chỉ]</button>
       </li>
       <li>
         <strong>Gemini AI Essentials:</strong> Chứng chỉ AI Student
@@ -127,18 +129,20 @@
       </li>
       <li>
         <strong>English B1:</strong> Chứng chỉ ngoại ngữ Đại học Cần Thơ
-        <button class="view-detail-btn" data-src="assets/Certified/VoMinhKhoiVstepB1_1.pdf" data-title="Chứng chỉ Anh văn B1 - CTU">[Xem chứng chỉ]</button>
+        <!-- Anh văn B1 có 2 trang -->
+        <button class="view-detail-btn" data-src="assets/Certified/AV/VoMinhKhoiVstepB1_1_page-0001.jpg,assets/Certified/AV/VoMinhKhoiVstepB1_1_page-0002.jpg" data-title="Chứng chỉ Anh văn B1 - CTU">[Xem chứng chỉ]</button>
       </li>
     </ul>
   </section>
 </div>
 
+<!-- Modal hiển thị danh sách ảnh chứng chỉ bảo mật -->
 <div id="detailModal" class="modal">
   <div class="modal-body">
     <span class="close-modal">&times;</span>
     <div class="no-download-overlay"></div>
-    <img id="imgViewer" style="display:none;" class="modal-content" draggable="false">
-    <iframe id="pdfViewer" style="display:none;" frameborder="0" scrolling="yes"></iframe>
+    <!-- Khu vực chứa các trang ảnh động -->
+    <div id="imageContainer" style="display: flex; flex-direction: column; gap: 15px; align-items: center;"></div>
     <div id="caption"></div>
   </div>
 </div>

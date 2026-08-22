@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById("detailModal");
-  const imgViewer = document.getElementById("imgViewer");
-  const pdfViewer = document.getElementById("pdfViewer");
+  const imageContainer = document.getElementById("imageContainer");
   const captionText = document.getElementById("caption");
   const closeModal = document.querySelector(".close-modal");
 
   document.querySelectorAll(".view-detail-btn").forEach(btn => {
     btn.addEventListener('click', function() {
-      const src = this.getAttribute('data-src');
+      const srcList = this.getAttribute('data-src').split(',');
       const title = this.getAttribute('data-title');
       
       modal.style.display = "block";
       captionText.innerHTML = title;
       document.body.style.overflow = "hidden";
 
-      if (src.toLowerCase().endsWith('.pdf')) {
-        imgViewer.style.display = "none";
-        pdfViewer.style.display = "block";
-        pdfViewer.src = src + "#toolbar=0&navpanes=0&scrollbar=1&view=FitH";
-      } else {
-        pdfViewer.style.display = "none";
-        imgViewer.style.display = "block";
-        imgViewer.src = src;
-      }
+      // Xóa nội dung ảnh cũ và load các trang mới vào
+      imageContainer.innerHTML = "";
+      srcList.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src.trim();
+        img.className = "modal-content";
+        img.setAttribute("draggable", "false");
+        img.style.cssText = "width: 100%; border-radius: 6px; border: 2px solid #fff; background: #fff; object-fit: contain; pointer-events: none;";
+        imageContainer.appendChild(img);
+      });
     });
   });
 
   const closeFunc = () => { 
     modal.style.display = "none"; 
-    pdfViewer.src = ""; 
+    imageContainer.innerHTML = ""; 
     document.body.style.overflow = "auto"; 
   };
 
